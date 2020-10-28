@@ -6,7 +6,7 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
 }
 
 .header {
@@ -16,17 +16,19 @@
   /* выше установили ограничения для секции */
   margin-bottom: 100px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: baseline;
+  flex-direction: row;
+  align-items: center;
   padding: 30px 0 30px 64px;
   overflow: hidden;
   position: relative;
   background-color: #f2f2f2;
 }
 
-.logo_place_header {
+.logo {
   width: 183px;
+}
+
+.logo_place_header {
   height: 32px;
   position: absolute;
   top: 30px;
@@ -34,7 +36,6 @@
 }
 
 .logo_place_footer {
-  width: 183px;
   height: 35px;
 }
 
@@ -45,9 +46,6 @@
   font-weight: bold;
   margin: 0;
   z-index: 10;
-  position: absolute;
-  top: 250px;
-  left: 64px;
 }
 
 .header__subtitle {
@@ -84,7 +82,7 @@
   background-color: #2f80ed;
   position: absolute;
   right: 0;
-  top: 34px;
+  top: 64px;
   z-index: 0;
 }
 
@@ -226,6 +224,7 @@
   margin: 0 0 70px 0;
   width: 648px;
   z-index: 10;
+  text-align: center;
 }
 
 .feynman__subtitle {
@@ -267,17 +266,18 @@
 }
 
 .kaufman__triangle {
-background-image: url('../images/kaufman-triangle.svg');
-width: 877px;
-height: 877px;
-position: absolute;
-top: 0;
-right: -210px;
+  background-image: url("../images/kaufman-triangle.svg");
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  top: 0;
+  right: -210px;
+  background-size: cover;
 }
 
 .footer {
   background-color: #1f1f1f;
-  padding: 60px 0 40px 64px;
+  padding: 60px 0 40px;
   display: flex;
   min-height: 350px;
   box-sizing: border-box;
@@ -287,6 +287,7 @@ right: -210px;
   display: flex;
   justify-content: space-between;
   width: 90%;
+  margin: 0 auto;
 }
 
 .footer__column {
@@ -305,7 +306,6 @@ right: -210px;
   font-weight: normal;
   margin: 18px 0;
   color: white;
-  
 }
 
 .footer__column-heading {
