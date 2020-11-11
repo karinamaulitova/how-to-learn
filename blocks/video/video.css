@@ -3,5 +3,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    bottom: -100px;
+    bottom: -50px;
+    z-index: 2;
+    overflow: hidden;
 }

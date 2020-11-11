@@ -6,4 +6,9 @@
     margin: 0;
     color: white;
   }
+
+  .footer__column-links:hover {
+    opacity: 0.6;
+    transition: opacity .2s;
+  }
   
